@@ -16,5 +16,5 @@ tabsRegisterButton.addEventListener('click', () => registerTabsEvent(storageAcce
 const tabsRestoreButton = document.getElementById('restore_tabs_btn');
 tabsRestoreButton.addEventListener('click', () => reOpenTabsEvent(storageAccess, tabAccess));
 
-const tabsRemoveButton = document.getElementById('delete_tabs_btn');
+const tabsRemoveButton = document.getElementById('remove_tabs_btn');
 tabsRemoveButton.addEventListener('click', () => removeTabsEvent(storageAccess));
