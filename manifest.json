@@ -3,7 +3,7 @@
   "version": "1.0",
   "description": "Remember Tabs remember your tabs even if you turn off your computer and then you can restore them",
   "manifest_version": 3,
-  "permissions": ["tabs"],
+  "permissions": ["tabs", "storage"],
   "icons": {
     "16": "images/pin_16px.png",
     "32": "images/pin_32px.png",
