@@ -4,6 +4,9 @@
   "description": "Remember Tabs remember your tabs even if you turn off your computer and then you can restore them",
   "manifest_version": 3,
   "icons": {
+    "16": "images/pin_16px.png",
+    "32": "images/pin_32px.png",
+    "64": "images/pin_64px.png",
     "128": "images/pin_128px.png"
   },
   "action": {
