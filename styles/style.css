@@ -8,11 +8,11 @@ body {
 .main__container {
     background-color: #3C4048;
     width: 150px;
-    height: 250px;
+    height: 280px;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -39,7 +39,7 @@ button {
     background-color: #628E90;
 }
 
-#delete_tabs_btn {
+#remove_tabs_btn {
     background-color: #CF0A0A;
 }
 
@@ -47,10 +47,26 @@ button {
     background-color: #2a6a2a;
 }
 
-#delete_tabs_btn:hover {
+#remove_tabs_btn:hover {
     background-color: #af1111;
 }
 
 #restore_tabs_btn:hover {
     background-color: #4d7a7d;
+}
+
+/* MESSAGES */
+#saved_tabs_msg {
+    color: #59CE8F;
+    font-weight: bold;
+}
+
+#remove_tabs_msg {
+    color: #F37878;
+    font-weight: bold;
+}
+
+#restored_tabs_msg {
+    color: #EEF2E6;
+    font-weight: bold;
 }
