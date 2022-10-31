@@ -5,5 +5,14 @@
   "manifest_version": 3,
   "icons": {
     "128": "images/128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/pin_16px.png",
+      "32": "images/pin_32px.png",
+      "64": "images/pin_64px.png",
+      "128": "images/pin_128px.png"
+    }
   }
 }
