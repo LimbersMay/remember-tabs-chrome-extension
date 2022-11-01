@@ -5,7 +5,12 @@ import {
 } from "./controllers/index.js";
 
 import { StorageController, TabController} from "./controllers/index.js";
-import { ChromeLocalStorageService, ChromeTabService} from "./services/index.js";
+import { 
+    ChromeLocalStorageService, 
+    ChromeTabService,
+    FirefoxLocalStorageService,
+    FirefoxTabService
+} from "./services/index.js";
 
 const storageAccess = new StorageController( new ChromeLocalStorageService() );
 const tabAccess = new TabController( new ChromeTabService() ); 
