@@ -1,25 +1,27 @@
 import { createMessageElement } from "../helpers/createMessageElement.js";
 import { handleMessage } from "../helpers/handleMessage.js";
 
-export const registerTabsEvent = async( tabAccess ) => {
+export const registerTabsEvent = async( storageAccess, tabAccess ) => {
 
-    const tabsArray = [];
-    
-    const tabs = await chrome.tabs.query({});
-
-    tabs.forEach( tab => {
-        tabsArray.push(tab.url);
-    });
-
-    tabAccess.setTabs(tabsArray);
+    const tabs = await tabAccess.getTabsUrls();
+    storageAccess.setTabs(tabs);
 
     // Mostramos el mensaje en pantalla
     handleMessage( createMessageElement('Tabs saved', 'saved_tabs_msg'));
 };
 
 export const reOpenTabsEvent = async( storageAccess, tabAccess ) => {
-    const tabs = await storageAccess.getTabs();
-    tabAccess.openTabs(tabs);
+
+    const registeredTabs = await storageAccess.getTabsUrls();
+    const currentOpenTabs = await tabAccess.getTabsUrls();
+
+    if ( registeredTabs.length === 0) {
+        handleMessage( createMessageElement('No tabs saved', 'restored_tabs_msg'));
+        return;
+    }
+
+    const tabsToOpen = registeredTabs.filter( tab => !currentOpenTabs.includes(tab) );    
+    tabAccess.openTabs( tabsToOpen );
 
     handleMessage( createMessageElement('Tabs opened', 'restored_tabs_msg'));
 }
