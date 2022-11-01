@@ -8,7 +8,7 @@ export class StorageController {
         this.service.setTabs( tabs );
     } 
 
-    async getTabs() {
-        return await this.service.getTabs();
+    getTabsUrls() {
+        return this.service.getTabsUrls();
     }
 }
