@@ -11,7 +11,7 @@ const storageAccess = new StorageController( new ChromeLocalStorageService() );
 const tabAccess = new TabController( new ChromeTabService() ); 
 
 const tabsRegisterButton = document.getElementById('save_tabs_btn');
-tabsRegisterButton.addEventListener('click', () => registerTabsEvent(storageAccess) );
+tabsRegisterButton.addEventListener('click', () => registerTabsEvent(storageAccess, tabAccess) );
 
 const tabsRestoreButton = document.getElementById('restore_tabs_btn');
 tabsRestoreButton.addEventListener('click', () => reOpenTabsEvent(storageAccess, tabAccess));
