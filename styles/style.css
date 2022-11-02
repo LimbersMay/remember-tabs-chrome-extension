@@ -6,7 +6,7 @@ body {
 }
 
 .main__container {
-    background-color: #37474F;
+    background-color: #E8EAF6;
     width: 150px;
     height: 280px;
 
@@ -17,7 +17,7 @@ body {
 }
 
 button {
-    width: 100px;
+    width: 120px;
     height: 50px;
     border-style: none;
     margin: 3px;  
@@ -25,10 +25,23 @@ button {
     border-radius: 5px;
 }
 
-#title {
+h3 {
     color: white;
     font-weight: bold;
-    
+}
+
+#buttons_container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    background-color: #B71C1C;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 #save_tabs_btn {
@@ -57,16 +70,16 @@ button {
 
 /* MESSAGES */
 #saved_tabs_msg {
-    color: #59CE8F;
-    font-weight: bold;
-}
-
-#remove_tabs_msg {
-    color: #F37878;
+    color: #1B5E20;
     font-weight: bold;
 }
 
 #restored_tabs_msg {
-    color: #EEF2E6;
+    color: #004D40;
+    font-weight: bold;
+}
+
+#remove_tabs_msg {
+    color: #B71C1C;
     font-weight: bold;
 }
