@@ -8,6 +8,11 @@ export class ChromeLocalStorageService {
     getTabsUrls() {
         return new Promise(( resolve, reject ) => {
             chrome.storage.sync.get(["tabs"], function( result ) {
+
+                if ( !result.tabs ) {
+                    resolve([]);
+                }
+
                 resolve(JSON.parse(result.tabs));
             });
         })
