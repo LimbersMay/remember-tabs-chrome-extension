@@ -2,12 +2,12 @@
 Remember-tabs can save all your tabs information so later you can restore them 
 
 ### Save Tabs
-![Screenshot_2022-10-31-15-19-19_1366x768](https://user-images.githubusercontent.com/66845300/199112856-bb7074a6-97e1-49bd-89ec-9c689cbf6e57.png)
+![image](https://user-images.githubusercontent.com/66845300/199576715-4c31ba34-5c30-4f44-a153-484a1b76a469.png)
 
 
 ### Re-open Tabs
-![Screenshot_2022-10-31-15-21-28_1366x768](https://user-images.githubusercontent.com/66845300/199113079-c5c869fe-21be-4b6d-a13f-e267a3373b72.png)
+![image](https://user-images.githubusercontent.com/66845300/199576746-5385aad0-6373-46b2-ab21-d1eb6f7c48de.png)
 
 
 ### Remove registered tabs
-![image](https://user-images.githubusercontent.com/66845300/199113208-70e1c8dd-8989-42c8-a10d-89a716637c1f.png)
+![image](https://user-images.githubusercontent.com/66845300/199576776-821d8d34-2ae0-4025-aa2a-cbf780c969e3.png)
