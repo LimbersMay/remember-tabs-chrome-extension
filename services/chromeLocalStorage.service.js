@@ -10,7 +10,7 @@ export class ChromeLocalStorageService {
             chrome.storage.sync.get(["tabs"], function( result ) {
 
                 if ( !result.tabs ) {
-                    resolve([]);
+                    return resolve([]);
                 }
 
                 resolve(JSON.parse(result.tabs));
